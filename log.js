@@ -1,6 +1,1 @@
-var ID = function () {
-  // Math.random should be unique because of its seeding algorithm.
-  // Convert it to base 36 (numbers + letters), and grab the first 9 characters
-  // after the decimal.
-  return '_' + Math.random().toString(36).substr(2, 9);
-};
+"use strict";var CODA=CODA||{};CODA.FREEFIRE=function(e,r){return{playerId:null}}(0,jQuery),$(document).ready(function(){$("input[name='freefire.userId']").mask("0999999999999999999999999");var e=$.cookie("freefire_playerid");null!=e&&(CODA.FREEFIRE.playerId=e,$("input[name='freefire.userId']").val(CODA.FREEFIRE.playerId)),$("input[name='freefire.userId']").blur(function(){CODA.FREEFIRE.playerId=$("input[name='freefire.userId']").val(),$.cookie("freefire_playerid",CODA.FREEFIRE.playerId,{path:"/",expires:180})})});
