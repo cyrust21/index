@@ -1,4 +1,6 @@
-<?php 
-    $random = substr(md5(mt_rand()), 0, 7);
-    echo $random;
+<?php
+echo "Today is " . date("Y/m/d") . "<br>";
+echo "Today is " . date("Y.m.d") . "<br>";
+echo "Today is " . date("Y-m-d") . "<br>";
+echo "Today is " . date("l");
 ?>
